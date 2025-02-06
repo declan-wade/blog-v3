@@ -25,8 +25,9 @@ import dayjs from 'dayjs'
 import { Input } from '@/components/ui/input'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { useToast } from "@/hooks/use-toast"
+import dynamic from 'next/dynamic'
 
-export default function New() {
+const New = () => {
     const router = useRouter()
     const searchParams = useSearchParams()
     const [title, setTitle] = useState("")
@@ -192,3 +193,7 @@ export default function New() {
         </div>
     )
 }
+
+export default dynamic(() => Promise.resolve(New), {
+  ssr: false
+})
