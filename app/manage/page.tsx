@@ -1,5 +1,6 @@
 import { PostsTable } from "@/components/postTable";
 import { Suspense } from "react";
+import ManageButtons from "@/components/manageButtons";
 
 export default function Manage() {
   return (
@@ -7,6 +8,7 @@ export default function Manage() {
       <h1>All Posts</h1>
       <Suspense>
         <PostsTable />
+        <ManageButtons />
       </Suspense>
     </div>
   );

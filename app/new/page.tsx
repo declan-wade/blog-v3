@@ -45,7 +45,12 @@ const New = () => {
 
   async function handleSave() {
     const response = await createPost(content, title, type, date);
+    toast({
+      title: "Success",
+      description: "Post published successfully!",
+    });
     router.replace(`/new?post=${response.id}`);
+    setId(response.id);
   }
 
   async function preFetch(id: string) {
@@ -129,16 +134,19 @@ const New = () => {
       />
 
       {/* Preview */}
-      <div className="p-8 border rounded-md bg-gray-950">
+      <div className="p-5 border rounded-md bg-gray-950">
         <div className="prose dark:prose-invert font-[family-name:var(--font-geist-sans)]">
           <Markdown>{content}</Markdown>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
 
       {/* Save Buttons */}
       <footer className="fixed inset-x-0 flex gap-6 p-3 rounded-full place-self-center items-center justify-center outline outline-1 outline-white bottom-10 backdrop-blur-md">
         <Button
-          onClick={() => router.back()}
+          onClick={() => router.push("/manage")}
           variant="ghost"
           className="w-20 rounded-md shadow-md transition-all focus:outline-hidden focus:ring-3 focus:ring-blue-400"
         >

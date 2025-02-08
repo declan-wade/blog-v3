@@ -9,7 +9,7 @@ export default function Home() {
       <header className="fixed top-5 text-xl mix-blend-difference font-black">
         DECLAN WADE
       </header>
-      <div className="flex flex-col gap-8 p-5 row-start-2 items-start outline outline-1 outline-white">
+      <div className="flex flex-col gap-8 p-5 row-start-2 items-start outline-1 outline-white">
         <a
           className="font-bold hover:underline hover:underline-offset-4"
           href="/blog"
@@ -21,7 +21,7 @@ export default function Home() {
         </Suspense>
       </div>
       <br></br>
-      <div className="flex flex-col gap-8 p-5 row-start-2 items-start outline outline-1 outline-white">
+      <div className="flex flex-col gap-8 p-5 row-start-2 items-start outline-1 outline-white">
         <a
           className="font-bold hover:underline hover:underline-offset-4"
           href="/projects"
@@ -33,7 +33,7 @@ export default function Home() {
         </Suspense>
       </div>
       <br></br>
-      <div className="flex flex-col gap-8 p-5 row-start-2 items-start outline outline-1 outline-white">
+      <div className="flex flex-col gap-8 p-5 row-start-2 items-start outline-1 outline-white">
         <a
           className="font-bold hover:underline transition hover:underline-offset-4"
           href="/about"
@@ -55,6 +55,8 @@ export default function Home() {
           have worked on.
         </div>
       </div>
+      <br />
+      <br />
       <Footer />
     </div>
   );
