@@ -2,7 +2,7 @@ import { House, Bolt, User, Rss } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="fixed inset-x-0 flex gap-5 p-3 pl-5 pe-5 rounded-full place-self-center items-center justify-center outline outline-1 outline-white bottom-5 backdrop-blur-md">
+    <footer className="fixed inset-x-0 flex mx-1 gap-3 p-3 pl-5 pe-5 rounded-full place-self-center items-center justify-center outline outline-1 outline-white bottom-5 backdrop-blur-md">
       <a
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
         href="/"

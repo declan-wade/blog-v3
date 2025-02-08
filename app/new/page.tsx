@@ -144,7 +144,7 @@ const New = () => {
       <br />
 
       {/* Save Buttons */}
-      <footer className="fixed inset-x-0 flex gap-6 p-3 rounded-full place-self-center items-center justify-center outline outline-1 outline-white bottom-10 backdrop-blur-md">
+      <footer className="fixed inset-x-0 flex gap-3 mx-1 p-3 rounded-full place-self-center items-center justify-center outline outline-1 outline-white bottom-5 backdrop-blur-md">
         <Button
           onClick={() => router.push("/manage")}
           variant="ghost"
